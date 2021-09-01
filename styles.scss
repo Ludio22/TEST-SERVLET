@@ -104,12 +104,10 @@ $text: #322b57;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        label {
+        span {
             font-family: Roboto;
             font-weight: 700;
             font-size: 15px;
-        }
-        span {
             width: 135px;
             display: block;
         }

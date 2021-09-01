@@ -32,7 +32,7 @@ font-family: 'Roboto', sans-serif;*/
   margin: 0 auto;
   padding: 0 15px;
   display: -webkit-box;
-  display: -ms-flexbox; 
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -150,12 +150,10 @@ font-family: 'Roboto', sans-serif;*/
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.body .form label {
+.body .form span {
   font-family: Roboto;
   font-weight: 700;
   font-size: 15px;
-}
-.body .form span {
   width: 135px;
   display: block;
 }
