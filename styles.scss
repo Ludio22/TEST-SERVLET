@@ -78,6 +78,13 @@ $text: #322b57;
     max-width: 1146px;
     margin: 35px auto 35px auto;
     border-radius: 30px;
+    .row {
+        position: relative;
+        img {
+            position: absolute;
+            top: 14px;
+        }
+    }
     .background {
         padding: 15px;
         flex: 0 1 46%;
@@ -144,7 +151,7 @@ $text: #322b57;
                 outline: none;
             }
             &.big {
-                width: 300px; 
+                width: 300px;
             }
             &.small {
                 width: 90px;
@@ -160,28 +167,105 @@ $text: #322b57;
             width: 300px;
             display: flex;
             justify-content: space-between;
-            select{
+            select {
                 appearance: none;
                 padding: 14px;
-                &:disabled{
-                    color: #b3b3b3;
-                }
             }
         }
-        &__sex-wrap{
+        &__sex-wrap {
             display: flex;
             justify-content: space-between;
             flex: 0 1 44%;
-            label{
+            label {
                 display: flex;
+                position: relative;
                 align-items: baseline;
             }
+            //female
+            .radio__female-input {
+                appearance: none;
+                position: absolute;
+            }
+            .radio__female-label {
+                &::before {
+                    content: "";
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    background-color: #c4c4c4;
+                    display: block;
+                    transition: 0.3s;
+                    position: absolute;
+                    z-index: 1;
+                    top: 8px;
+                }
+                &::after {
+                    content: "";
+                    background-image: url(./images/female.svg);
+                    background-repeat: no-repeat;
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+
+                    position: absolute;
+                    z-index: 2;
+                    top: 12px;
+                    left: 6px;
+                }
+            }
+            .radio__female-input:checked + .radio__female-label {
+                color: #0da1a1;
+            }
+            .radio__female-input:checked + .radio__female-label::before {
+                background: #0da1a1;
+            }
+            //male
+            .radio__male-input {
+                appearance: none;
+                position: absolute;
+            }
+            .radio__male-label {
+                &::before {
+                    content: "";
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    background-color: #c4c4c4;
+                    display: block;
+                    transition: 0.3s;
+                    position: absolute;
+                    z-index: 1;
+                    top: 8px;
+                }
+                &::after {
+                    content: "";
+                    background-image: url(./images/male.svg);
+                    background-repeat: no-repeat;
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+
+                    position: absolute;
+                    z-index: 2;
+                    top: 12px;
+                    left: 4px;
+                }
+            }
+            .radio__male-input:checked + .radio__male-label {
+                color: #0da1a1;
+            }
+            .radio__male-input:checked + .radio__male-label::before {
+                background: #0da1a1;
+            }
+            .sex {
+                margin-left: 2.5em;
+            }
         }
-        &__type-wrap{
+        &__type-wrap {
             display: flex;
             justify-content: space-between;
             flex: 0 1 44%;
-            label{
+            label {
                 display: flex;
                 align-items: baseline;
             }

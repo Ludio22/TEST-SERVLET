@@ -34,6 +34,9 @@
         </header>
         <section class="body">
             <div class="container">
+                <a href="#" class="row">
+                    <img src="./images/arrow.svg" alt="arrow">   
+                </a>
                 <div class="background">
                     <img src="./images/background.webp" alt="background" draggable="false">
                 </div>
@@ -51,12 +54,18 @@
                         <div class="form__sex item">
                             <span>Пол</span>
                             <div class="form__sex-wrap">
-                                <label>
-                                    <input type="radio" name="sex" value="female"><p class="radio">Женский</p>
-                                </label>
-                                <label>
-                                    <input type="radio" name="sex" value="male"><p class="radio">Мужской</p>
-                                </label>
+                                <div>
+                                    <input type="radio" class="radio__female-input" id="female" name="sex" value="female">
+                                    <label class="radio__female-label" for="female">
+                                        <p class="radio sex">Женский</p>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="radio__male-input" id="male" name="sex" value="male">
+                                    <label class="radio__male-label" for="male">
+                                        <p class="radio sex">Мужской</p>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="form__birthday item">
