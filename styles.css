@@ -157,6 +157,11 @@ font-family: 'Roboto', sans-serif;*/
   width: 135px;
   display: block;
 }
+.body .form .radio {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 12px;
+}
 .body .form__btn {
   font-family: Montserrat;
   font-weight: bold;
@@ -230,6 +235,53 @@ font-family: 'Roboto', sans-serif;*/
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.body .form__birthday-input select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 14px;
+}
+.body .form__birthday-input select:disabled {
+  color: #b3b3b3;
+}
+.body .form__sex-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 44%;
+          flex: 0 1 44%;
+}
+.body .form__sex-wrap label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.body .form__type-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 44%;
+          flex: 0 1 44%;
+}
+.body .form__type-wrap label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 .body .form .item {
   display: -webkit-box;
