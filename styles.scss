@@ -111,6 +111,11 @@ $text: #322b57;
             width: 135px;
             display: block;
         }
+        .radio {
+            font-family: Montserrat;
+            font-weight: 300;
+            font-size: 12px;
+        }
         &__btn {
             font-family: Montserrat;
             font-weight: bold;
@@ -155,6 +160,31 @@ $text: #322b57;
             width: 300px;
             display: flex;
             justify-content: space-between;
+            select{
+                appearance: none;
+                padding: 14px;
+                &:disabled{
+                    color: #b3b3b3;
+                }
+            }
+        }
+        &__sex-wrap{
+            display: flex;
+            justify-content: space-between;
+            flex: 0 1 44%;
+            label{
+                display: flex;
+                align-items: baseline;
+            }
+        }
+        &__type-wrap{
+            display: flex;
+            justify-content: space-between;
+            flex: 0 1 44%;
+            label{
+                display: flex;
+                align-items: baseline;
+            }
         }
         .item {
             display: flex;
