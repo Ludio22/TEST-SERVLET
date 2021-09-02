@@ -1,0 +1,110 @@
+.body {
+  max-width: 1146px;
+  margin: 35px auto 35px auto;
+}
+.body .container {
+  width: 1146px;
+}
+.body .filter {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.body .filter > input {
+  font-family: Montserrat;
+  padding: 12px 0;
+  width: 140px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  color: #ffffff;
+  background: #0da1a1;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 40px;
+}
+.body .filter input[type=text],
+.body .filter select {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 18px;
+  color: #322b57;
+  padding: 14px 0 14px 24px;
+  border: 1px solid rgba(31, 35, 38, 0.6);
+  border-radius: 10px;
+}
+.body .filter input[type=text]:focus,
+.body .filter select:focus {
+  outline: none;
+}
+.body .filter__wrapper {
+  width: 952px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.body .filter__params {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.body .filter__price {
+  padding-top: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+  border: 1px solid rgba(31, 35, 38, 0.6);
+  border-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.body .filter__price p {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 18px;
+  color: #322b57;
+}
+.body .filter__price input {
+  width: 154px;
+}
+.body .filter__price input:first-child {
+  margin-right: 10px;
+}
