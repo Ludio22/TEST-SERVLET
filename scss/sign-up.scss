@@ -5,6 +5,18 @@ $text: #322b57;
     max-width: 1146px;
     margin: 35px auto 35px auto;
     border-radius: 30px;
+    .select {
+        position: relative;
+    }
+    .select::after {
+        position: absolute;
+        content: "";
+        top: 19px;
+        right: 8px;
+        width: 10px;
+        height: 5px;
+        background: url("../images/select-row.svg") no-repeat;
+    }
     .row {
         position: relative;
         img {
@@ -99,6 +111,13 @@ $text: #322b57;
             select {
                 appearance: none;
                 padding: 14px;
+                font-family: Montserrat;
+                font-weight: 300;
+                font-size: 11px;
+                color: #b3b3b3;
+                &:focus {
+                    outline: none;
+                }
             }
         }
         &__sex-wrap {

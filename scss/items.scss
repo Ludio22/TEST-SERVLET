@@ -41,6 +41,22 @@ $text: #322b57;
                 outline: none;
             }
         }
+        select {
+            width: 100%;
+            appearance: none;
+        }
+        .select {
+            position: relative;
+        }
+        .select::after {
+            position: absolute;
+            content: "";
+            top: 23px;
+            right: 16px;
+            width: 10px;
+            height: 5px;
+            background: url("../images/select-row.svg") no-repeat;
+        }
         &__wrapper {
             width: 952px;
             display: flex;
@@ -85,7 +101,7 @@ $text: #322b57;
         &__item {
             display: flex;
             justify-content: space-between;
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-bottom: 30px;
             }
         }
@@ -141,7 +157,7 @@ $text: #322b57;
                     font-size: 12px;
                     color: #051f61;
                 }
-                ~div{
+                ~ div {
                     display: flex;
                     align-items: center;
                     justify-content: space-evenly;
@@ -149,7 +165,7 @@ $text: #322b57;
             }
         }
         &__next {
-            background: linear-gradient(180deg, #30CE95 0%, #A1D85A 100%);
+            background: linear-gradient(180deg, #30ce95 0%, #a1d85a 100%);
             width: 24px;
             height: 24px;
             display: flex;
