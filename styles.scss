@@ -83,6 +83,7 @@ $text: #322b57;
         img {
             position: absolute;
             top: 14px;
+            left: 14px;
         }
     }
     .background {
@@ -93,7 +94,8 @@ $text: #322b57;
         }
     }
     .form-wrap {
-        flex: 0 1 46%;
+        flex: 0 1 43%;
+        padding-right: 2em;
         color: $text;
     }
     .sign-up {
@@ -268,6 +270,13 @@ $text: #322b57;
             label {
                 display: flex;
                 align-items: baseline;
+            }
+            input {
+                position: relative;
+                top: 2px;
+            }
+            input:checked ~ p {
+                color: #0da1a1;
             }
         }
         .item {

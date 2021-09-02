@@ -114,6 +114,7 @@ font-family: 'Roboto', sans-serif;*/
 .body .row img {
   position: absolute;
   top: 14px;
+  left: 14px;
 }
 .body .background {
   padding: 15px;
@@ -126,8 +127,9 @@ font-family: 'Roboto', sans-serif;*/
 }
 .body .form-wrap {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 46%;
-          flex: 0 1 46%;
+      -ms-flex: 0 1 43%;
+          flex: 0 1 43%;
+  padding-right: 2em;
   color: #322b57;
 }
 .body .sign-up {
@@ -364,6 +366,13 @@ font-family: 'Roboto', sans-serif;*/
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+.body .form__type-wrap input {
+  position: relative;
+  top: 2px;
+}
+.body .form__type-wrap input:checked ~ p {
+  color: #0da1a1;
 }
 .body .form .item {
   display: -webkit-box;
