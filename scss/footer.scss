@@ -1,0 +1,43 @@
+.footer {
+    background: #1f2326;
+    height: 133px;
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        background: linear-gradient(180deg, #30ce95 0%, #a1d85a 100%);
+        border-radius: 50%;
+        width: 41px;
+        height: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5px;
+        ~ p {
+            font-size: 25px;
+            color: #fff;
+            font-family: "Roboto", sans-serif;
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        &-item {
+            width: 41px;
+            height: 41px;
+            border: 2.05714px solid #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: inherit;
+    }
+}

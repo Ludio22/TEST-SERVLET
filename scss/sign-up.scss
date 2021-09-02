@@ -24,9 +24,6 @@ $text: #322b57;
         flex: 0 1 43%;
         padding-right: 2em;
         color: $text;
-        &.sign-in{
-            padding-top: 3em;
-        }
     }
     .sign-up {
         font-size: 40px;
@@ -37,9 +34,6 @@ $text: #322b57;
     .container {
         display: flex;
         justify-content: space-between;
-        &.sign-in{
-            margin-bottom: 4em;
-        }
     }
     .form {
         height: 75%;
@@ -52,9 +46,6 @@ $text: #322b57;
             font-size: 15px;
             width: 135px;
             display: block;
-        }
-        &.sign-in{
-            height: auto;
         }
         .radio {
             font-family: Montserrat;
@@ -139,7 +130,7 @@ $text: #322b57;
                 }
                 &::after {
                     content: "";
-                    background-image: url(./images/female.svg);
+                    background-image: url(../images/female.svg);
                     background-repeat: no-repeat;
                     display: block;
                     width: 16px;
@@ -177,7 +168,7 @@ $text: #322b57;
                 }
                 &::after {
                     content: "";
-                    background-image: url(./images/male.svg);
+                    background-image: url(../images/male.svg);
                     background-repeat: no-repeat;
                     display: block;
                     width: 16px;
@@ -239,49 +230,5 @@ $text: #322b57;
             text-align: center;
             margin-bottom: 50px;
         }
-    }
-}
-
-.footer {
-    background: #1f2326;
-    height: 133px;
-    &__logo {
-        display: flex;
-        align-items: center;
-    }
-    &__icon {
-        background: linear-gradient(180deg, #30ce95 0%, #a1d85a 100%);
-        border-radius: 50%;
-        width: 41px;
-        height: 41px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 5px;
-        ~ p {
-            font-size: 25px;
-            color: #fff;
-            font-family: "Roboto", sans-serif;
-        }
-    }
-    &__social {
-        display: flex;
-        justify-content: space-between;
-        width: 200px;
-        &-item {
-            width: 41px;
-            height: 41px;
-            border: 2.05714px solid #ffffff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: inherit;
     }
 }
