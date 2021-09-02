@@ -9,10 +9,11 @@ $text: #322b57;
     .filter {
         background-color: #fff;
         border-radius: 10px;
-        padding: 50px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 40px;
+        padding: 50px 0;
         > input {
             font-family: Montserrat;
             padding: 12px 0;
@@ -74,6 +75,91 @@ $text: #322b57;
                 &:first-child {
                     margin-right: 10px;
                 }
+            }
+        }
+    }
+    .items {
+        padding: 67px 128px;
+        background-color: #fff;
+        border-radius: 10px;
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
+        }
+        &__img {
+            margin-right: 46px;
+        }
+        h3 {
+            margin: 0;
+            margin-bottom: 3em;
+            font-family: Montserrat;
+            font-weight: 900;
+            font-size: 16px;
+            color: #051f61;
+        }
+        &__info {
+            width: 52%;
+            span {
+                font-family: Montserrat;
+                font-weight: bold;
+                font-size: 14px;
+                color: #051f61;
+            }
+            p:not(:last-child) {
+                font-family: Montserrat;
+                font-size: 14px;
+                color: #051f61;
+            }
+            p:last-child {
+                font-family: Montserrat;
+                margin-right: 36px;
+                font-weight: normal;
+                font-size: 9.35789px;
+                line-height: 16px;
+                letter-spacing: -0.164757px;
+                color: #051f61;
+            }
+        }
+        &__price {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            > div:first-child {
+                span {
+                    font-family: Montserrat;
+                    font-weight: 500;
+                    font-size: 15.5965px;
+                    line-height: 19px;
+                    color: #051f61;
+                }
+                p {
+                    font-family: Montserrat;
+                    font-weight: normal;
+                    font-size: 12px;
+                    color: #051f61;
+                }
+                ~div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                }
+            }
+        }
+        &__next {
+            background: linear-gradient(180deg, #30CE95 0%, #A1D85A 100%);
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ~ p {
+                font-family: Roboto;
+                font-weight: normal;
+                font-size: 10.9175px;
+                color: #051f61;
             }
         }
     }
