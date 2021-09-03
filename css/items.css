@@ -146,6 +146,12 @@
 .body .items__img {
   margin-right: 46px;
 }
+.body .items__img img {
+  width: 270px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .body .items h3 {
   margin: 0;
   margin-bottom: 3em;

@@ -107,6 +107,11 @@ $text: #322b57;
         }
         &__img {
             margin-right: 46px;
+            img {
+                width: 270px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
         }
         h3 {
             margin: 0;
