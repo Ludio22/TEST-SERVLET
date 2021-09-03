@@ -4,6 +4,10 @@ $text: #322b57;
     height: 66px;
     box-shadow: inset 0px -1px 0px #eaeaea;
     background-color: #fff;
+    img {
+        border-radius: 50%;
+        width: 43px;
+    }
     &__container {
         max-width: 1300px;
         margin: 0 auto;
