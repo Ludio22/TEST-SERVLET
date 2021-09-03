@@ -208,13 +208,14 @@
   font-size: 12px;
   color: #051f61;
 }
-.body .items__price > div:first-child ~ div {
+.body .items__price > div:first-child ~ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
